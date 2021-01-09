@@ -94,12 +94,9 @@
                           <span>
                             <i class="fa fa-clock-o" aria-hidden="true"></i> <?php echo $post['date_added'] ?>    
                           </span>
-                          <span>
-                            <i class="fa fa-comment" aria-hidden="true"></i> 10    
-                          </span>
                       </p>
                   </div>
-                  <p class="summary"><?php echo substr($post['post'],0,180);?>...</p>
+                  <p class="summary"><?php echo substr($post['post'],0,150);?>...</p>
                   <?php if($this->session->userdata('user_type') =='auth') { ?>
                   <div class="action-button-container">
                     <a href="<?php echo base_url(); ?>index.php/blog/new_post">
@@ -142,20 +139,13 @@
                       <div class="right">
                         <div class="item-content">
                           <a href="<?php echo base_url(); ?>index.php/blog/post_detail/<?php echo $post['post_id'];?>">
-                          <h3 style="margin: 0px;font-size: 14px;" class="title"><?php echo substr($post['post_title'],0,40);?>...</h3>
+                          <h3 style="margin: 0px;font-size: 14px;" class="title"><?php echo substr($post['post_title'],0,60);?>...</h3>
                           </a>
+                          <br>
                           <div class="post-meta">
                             <p class="post-meta-inner">
                             <span>
-                                <a href="https://infinite.codingest.com/profile/author">
-                                  author        
-                                </a>
-                            </span>
-                            <span>
-                              <i class="fa fa-clock-o" aria-hidden="true"></i> Aug 21, 2020    
-                            </span>
-                            <span>
-                              <i class="fa fa-comment" aria-hidden="true"></i> 10    
+                              <i class="fa fa-clock-o" aria-hidden="true"></i> <?php echo $post['date_added'] ?>    
                             </span>
                             </p>
                         </div>

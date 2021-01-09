@@ -55,10 +55,7 @@
                           <div class="post-meta">
                             <p class="post-meta-inner">
                             <span>
-                              <i class="fa fa-clock-o" aria-hidden="true"></i> Aug 21, 2020    
-                            </span>
-                            <span>
-                              <i class="fa fa-comment" aria-hidden="true"></i> 10    
+                              <i class="fa fa-clock-o" aria-hidden="true"></i> <?php echo $post['date_added'];?>    
                             </span>
                             </p>
                         </div>
